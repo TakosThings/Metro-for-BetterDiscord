@@ -1,5 +1,6 @@
 # Metro for BetterDiscord
 Metro for Discord is a theme to make Discord's Desktop client look like a native UWP application.
+
 Use the [main repo](https://github.com/TakosThings/Metro-for-Discord) to see documentation or to open issues and PRs.
 
 ## Download
