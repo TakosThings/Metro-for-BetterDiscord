@@ -4,7 +4,7 @@ Metro for Discord is a theme to make Discord's Desktop client look like a native
 Use the [main repo](https://github.com/TakosThings/Metro-for-Discord) to see documentation or to open issues and PRs.
 
 ## Download
-Get the latest version from the `dist` directory, or from #theme-releases in the BetterDiscord servers.
+Get the latest version from the `dist` directory.
 
 ## Requirements
 * An up to date install of Windows 10 with Segoe UI MDL2 Assets font
