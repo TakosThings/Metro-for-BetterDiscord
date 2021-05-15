@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.15.12
+ * @version 3.15.13
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -42,12 +42,6 @@ body,
 body::before,
 .container-16j22k::before {
   /* backdrop-filter: blur(45px) saturate(125%); */
-}
-
-/* Disable scale transition when opening User Settings */
-/* Uncomment to DISABLE the scale transition */
-.layer-3QrUeG {
-  /* transform: none !important; */
 }
 
 /*#########################################################
@@ -109,7 +103,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.15.12";
+  content: "Metro for Discord \aVersion 3.15.13";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -1084,32 +1078,28 @@ div[class^=bd-].item-PXvHYJ:hover {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(30)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Settings-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(31)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Emotes-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(32)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=customcss-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(33)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=plugins-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(34)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=themes-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(34)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=aaa-tab]::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(36)::after {
-  content: "";
-}
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(37)::after {
-  content: "";
-}
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(39)::after {
-  content: "";
+
+.bd-setting-header label[for=minimalMode]::after {
+  content: " Metro for Discord: Do not turn this on";
+  color: #D02E00;
 }
 
 #bd-settingspane-container .content-column.default {
@@ -1187,7 +1177,7 @@ div[class^=bd-].item-PXvHYJ:hover {
   border-color: rgba(255, 255, 255, 0.4);
 }
 
-.theme-dark .content-98HsJk .sidebar-2K8pFh .discoverHeader-1TWTqG {
+.theme-dark .content-98HsJk .sidebar-2K8pFh .discoverHeader-Ijkm_M {
   margin: 0;
   padding: 0 12px;
   background-color: rgba(0, 0, 0, 0.4);
@@ -1196,7 +1186,7 @@ div[class^=bd-].item-PXvHYJ:hover {
   line-height: 20px;
   line-height: 40px;
 }
-.theme-dark .content-98HsJk .sidebar-2K8pFh .discoverHeader-1TWTqG ~ .container-2Pjhx- {
+.theme-dark .content-98HsJk .sidebar-2K8pFh .discoverHeader-Ijkm_M ~ .container-2Pjhx- {
   margin-left: 48px;
 }
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx- {
@@ -1208,10 +1198,10 @@ div[class^=bd-].item-PXvHYJ:hover {
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx-:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx-.selectedCategoryItem-3X8ujp {
+.theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx-.selectedCategoryItem-FHKU_o {
   border-radius: 0;
 }
-.theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx-.selectedCategoryItem-3X8ujp .itemInner-3gVXMG {
+.theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx-.selectedCategoryItem-FHKU_o .itemInner-gPkiWb {
   background-color: rgba(var(--accent), 0.6);
 }
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx- .layout-2DM8Md {
@@ -1650,10 +1640,13 @@ div[class^=bd-].item-PXvHYJ:hover {
 .theme-dark .container-1D34oG .tabBody-3YRQ8W .peopleColumn-29fq28 .friendsEmpty-1K9B4k .text-GwUZgS {
   color: white;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q {
   background-color: #171717;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .header-13Cw0- {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .scroller-2ZPeAD {
+  border: 0;
+}
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .header-13Cw0- {
   color: white;
   font-size: 20px;
   font-weight: 400;
@@ -1662,55 +1655,55 @@ div[class^=bd-].item-PXvHYJ:hover {
   text-transform: none;
   text-transform: none;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .emptyCard-1RJw8n {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .emptyCard-1RJw8n {
   padding: 0;
   align-items: flex-start;
   background-color: transparent;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .emptyCard-1RJw8n h5 {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .emptyCard-1RJw8n h5 {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .emptyCard-1RJw8n .emptyText-2zjpZr {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .emptyCard-1RJw8n .emptyText-2zjpZr {
   display: none;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 {
-  padding: 0;
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 {
+  padding: 8px;
   padding-bottom: 12px;
   background-color: transparent;
-  border-bottom: 1px solid #333;
+  border: 1px solid #333;
   border-radius: 0;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7:last-child {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7:last-child {
   border-bottom: 0;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .body-1ld4H7 {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .body-1ld4H7 {
   margin-left: 46px;
   background-color: #1f1f1f;
   border-radius: 0;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .live-vBWnV6 {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .live-vBWnV6 {
   background-color: #D02E00 !important;
   border-radius: 50%;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .applicationStreamingPreviewWrapper-8QqvVY {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .applicationStreamingPreviewWrapper-8QqvVY {
   border-radius: 0;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV {
   background-color: #1f1f1f;
   border: 2px dashed black;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV .emptyPreviewImage-IBznSI {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV .emptyPreviewImage-IBznSI {
   display: none;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV .emptyPreviewText-2IOfAL {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .emptyPreviewContainer-1KOcxV .emptyPreviewText-2IOfAL {
   color: white;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark .container-1D34oG .tabBody-3YRQ8W .nowPlayingColumn-2sl4cE .itemCard-v9viV7 .applicationStreamingHoverText-IEVyfS {
+.theme-dark .container-1D34oG .tabBody-3YRQ8W .container-lRFx4q .itemCard-v9viV7 .applicationStreamingHoverText-IEVyfS {
   width: 100%;
   background-color: black;
   text-align: center;
@@ -5112,7 +5105,8 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1z4sAY .item-2hkk8m,
 .theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-3N7f9r .item-2hkk8m,
-.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m {
+.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m,
+.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1aYSec .item-2hkk8m {
   width: 2px;
   height: 24px !important;
   margin-left: 4px;
@@ -5120,7 +5114,8 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1z4sAY .item-2hkk8m[style*="height: 40px;"],
 .theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-3N7f9r .item-2hkk8m[style*="height: 40px;"],
-.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m[style*="height: 40px;"] {
+.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1Z5PKm .item-2hkk8m[style*="height: 40px;"],
+.theme-dark .wrapper-3NnKdC .listItem-GuPuDH .pill-1aYSec .item-2hkk8m[style*="height: 40px;"] {
   height: 24px !important;
   background-color: rgba(var(--accent), 1);
 }
@@ -6085,7 +6080,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=header] .channelIcon-3IJ4o7 {
   top: 20px;
 }
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item] {
+.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class*=item] {
   margin-bottom: 0;
   padding: 14px 48px;
   border-radius: 0;
@@ -6094,22 +6089,12 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item]:hover {
+.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class*=item]:hover {
   background-color: rgba(255, 255, 255, 0.1);
   cursor: default;
 }
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item][style*="color: rgb(114, 137, 218)"] {
-  color: #FFF !important;
-}
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item][style*="color: rgb(114, 137, 218)"]:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-}
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item][style*="color: rgb(114, 137, 218)"][class*=selected-] {
-  background-color: transparent !important;
-  color: rgba(var(--accent), 1) !important;
-}
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item][style*="color: rgb(114, 137, 218)"][class*=selected-]:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
+.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e .premiumTabItem-1QTfBr svg {
+  display: none;
 }
 .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class^=item-][style*="background-color: rgb(114, 137, 218);"],
 .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e div[class^=side] div[class*=selected-] {
@@ -6154,75 +6139,76 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(2)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="My Account-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(3)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Privacy & Safety-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(4)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Authorized Apps-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(5)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Connections-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(8)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Discord Nitro-tab"]::after {
   content: "N";
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  top: 12px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(9)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Nitro Server Boost-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(10)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Library Inventory-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(11)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Billing-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Appearance-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Accessibility-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Voice & Video-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Text & Images-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Notifications-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(19)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Keybinds-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(20)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Language-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(21)::after {
-  content: "";
-  transform: perspective(24px) rotateY(24deg) scale(1.2, 1.2);
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Windows-tab]::after {
+  content: "";
+  font-family: "HoloLens MDL2 Assets";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(22)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Streamer Mode-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(23)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Advanced-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(26)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Game Activity-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(27)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Overlay-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(29)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=changelog-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(30)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Hypesquad Online-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(32)::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=logout-tab]::after {
   content: "";
 }
 
@@ -6233,46 +6219,61 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(2)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=OVERVIEW-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(3)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=ROLES-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(4)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=EMOJI-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(5)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MODERATION-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(6)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=AUDIT_LOG-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(7)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INTEGRATIONS-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(8)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=WIDGET-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(9)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=GUILD_TEMPLATES-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(12)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=COMMUNITY-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=GUILD_PREMIUM-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=ANALYTICS-tab]::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=PARTNER-tab]::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DISCOVERY-tab]::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MEMBER_VERIFICATION-tab]::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=COMMUNITY_WELCOME-tab]::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MEMBERS-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INSTANT_INVITES-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(19)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=BANS-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(21)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DELETE-tab]::after {
   content: "";
 }
 
@@ -6283,19 +6284,19 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(2)::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=OVERVIEW-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(3)::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=PERMISSIONS-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(4)::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INSTANT_INVITES-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(5)::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INTEGRATIONS-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .separator-gCa7yv ~ .item-PXvHYJ::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DELETE-tab]::after {
   content: "";
 }
 
@@ -6306,10 +6307,10 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ:nth-child(3)::after {
+.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:TRANSPORT:0-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ:nth-child(4)::after {
+.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:OUTBOUND:0-tab"]::after {
   content: "";
 }
 
