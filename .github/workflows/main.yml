@@ -1,23 +1,19 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Main
 
-# Controls when the action will run. 
+# Schedule to run every day at midnight UTC
 on:
   schedule:
   - cron: "0 0 * * *"
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allow workflow to be run manually
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# Jobs to complete
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
@@ -26,28 +22,22 @@ jobs:
       - name: Fetch Github Release Assets
         uses: Itsblue/download-release-assets-action@v4
         with:
-          # org/repo to download from
+          # Download latest release BD CSS file
           repo: 'TakosThings/Metro-for-Discord'
-          # Version of the release to download from
           version: 'latest'
-          # Pattern of the files in the release to download (regex)
           file: 'Metro_for_Discord.theme.css'
           # Output path for the downloaded files
           path: 'dist'
           token: ${{ secrets.GITHUB_TOKEN }}
       
-      # Add & Commit
+      # Add BD CSS & Commit
       - name: Add & Commit
-        # You may pin to the exact commit or the version.
-        # uses: EndBug/add-and-commit@a3adef035a1381dcf888c90b847240e2ddb9e008
         uses: EndBug/add-and-commit@v7.2.0
         with:
-          # Arguments for the git add command
           add: 'dist/Metro_for_Discord.theme.css'
-          # Name of the branch to use, if different from the one that triggered the workflow
           branch: master
           # How the action should fill missing author name or email.
           default_author: github_actor
-          # The message for the commit
+          # Commit message
           message: 'Commit from GitHub Actions - Main'
           github_token: ${{ secrets.GITHUB_TOKEN }}
