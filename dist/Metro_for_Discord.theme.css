@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.15.16
+ * @version 3.15.17
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -109,7 +109,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.15.16";
+  content: "Metro for Discord \aVersion 3.15.17";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -2740,6 +2740,9 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   line-height: 24px;
   text-transform: none;
 }
+.theme-dark .root-3QyAh1 .tabBarContainer-37hZsr {
+  border: 0;
+}
 .theme-dark .root-3QyAh1 .tabBar-3nvOPa {
   height: 32px;
 }
@@ -2762,6 +2765,24 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   background-color: rgba(var(--accent), 1);
   border-radius: 4px;
 }
+.theme-dark .root-3QyAh1 .body-r6_QPy {
+  height: 328px;
+}
+.theme-dark .root-3QyAh1 .userInfoSection-q_35fn + .userInfoSection-q_35fn {
+  border: 0;
+  padding-top: 0;
+}
+.theme-dark .root-3QyAh1 .userInfoSectionHeader-3TYk6R {
+  color: white;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: none;
+}
+.theme-dark .root-3QyAh1 .note-367eZJ {
+  margin: 0;
+}
 .theme-dark .root-3QyAh1 .connectedAccount-2Jb-Z0 {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 2px;
@@ -2770,6 +2791,14 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
+}
+.theme-dark .root-3QyAh1 .emptyIcon-1yiM-z {
+  display: none;
+}
+.theme-dark .root-3QyAh1 .emptyText-2d2yNp {
+  color: white;
+  text-transform: none;
+  font-weight: normal;
 }
 
 .notice-2FJMB4 {
@@ -4953,6 +4982,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   padding: 0 12px;
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -5157,6 +5187,14 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .sidebar-2K8pFh .container-35XQWE {
   left: 48px;
 }
+.theme-dark .sidebar-2K8pFh .children-L002ao,
+.theme-dark .sidebar-2K8pFh .children-3rEycc {
+  visibility: hidden;
+}
+.theme-dark .sidebar-2K8pFh .containerDefault-3tr_sE:hover .children-L002ao,
+.theme-dark .sidebar-2K8pFh .containerDefault--pIXnN:hover .children-3rEycc {
+  visibility: visible;
+}
 
 .channelNotice-1-XFjC {
   display: none;
@@ -5165,6 +5203,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .container-1giJp5 {
   height: calc(48px + 24px);
   padding: 0;
+  border-bottom: 0;
 }
 .theme-dark .container-1giJp5 .flex-1xMQg5 {
   position: relative;
@@ -5182,24 +5221,37 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi {
   padding-bottom: 0;
 }
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityFine-2J6i8z ~ a div {
+.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi::before {
+  content: "";
+  height: 4px;
+  width: calc(240px - 32px);
+  position: absolute;
+  bottom: -2px;
+  left: 16px;
+  border-radius: 2px;
+  background-color: #000;
+}
+.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityFine-2J6i8z::before {
   background-color: #00cc6a;
 }
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityAverage-3KV0u- ~ a div {
+.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityAverage-3KV0u-::before {
   background-color: #ffb900;
 }
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityBad-1J7mUU ~ a div {
+.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityBad-1J7mUU::before {
   background-color: #e74856;
 }
 .theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi ~ a div {
   width: 180px;
   height: 24px;
-  border-radius: 0 12px 12px 0;
   padding-left: 8px;
-  color: black;
+  color: white;
   font-size: 12px;
+  font-weight: normal;
   line-height: 24px;
   box-sizing: border-box;
+}
+.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi ~ a div:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi svg {
   display: none;
@@ -5397,6 +5449,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   margin: 0 12px 8px 12px;
   padding: 16px 0 8px;
   color: white;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -5545,8 +5598,9 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .chat-3bRxxu .container-1r6BKw .children-19S4PO .title-29uC1r {
   margin-right: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 20px;
 }
 .theme-dark .chat-3bRxxu .container-1r6BKw .children-19S4PO .divider-3FBTu8 {
