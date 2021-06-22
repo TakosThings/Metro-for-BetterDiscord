@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.15.17
+ * @version 3.15.18
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -109,7 +109,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.15.17";
+  content: "Metro for Discord \aVersion 3.15.18";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -5188,11 +5188,11 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   left: 48px;
 }
 .theme-dark .sidebar-2K8pFh .children-L002ao,
-.theme-dark .sidebar-2K8pFh .children-3rEycc {
+.theme-dark .sidebar-2K8pFh .children-3rEycc .iconItem-F7GRxr {
   visibility: hidden;
 }
 .theme-dark .sidebar-2K8pFh .containerDefault-3tr_sE:hover .children-L002ao,
-.theme-dark .sidebar-2K8pFh .containerDefault--pIXnN:hover .children-3rEycc {
+.theme-dark .sidebar-2K8pFh .containerDefault--pIXnN:hover .children-3rEycc .iconItem-F7GRxr {
   visibility: visible;
 }
 
