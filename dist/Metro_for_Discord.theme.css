@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.15.18
+ * @version 3.15.19
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -18,7 +18,8 @@
 ## https://github.com/TakosThings/Metro-for-Discord/wiki ##
 #########################################################*/
 /* Accent Colour */
-/* Must be provided in RGB format */
+/* Description: Change the accent colour. Must be provided in RGB format */
+/* Default: Accent is 'Default Blue'. Link is 'Default Blue'. Voice is 'Turf Green' */
 :root {
   --accent: 0, 120, 215;
   --link: 0, 120, 215;
@@ -26,25 +27,31 @@
 }
 
 /* Hide Stage Discovery */
-/* Delete this to display the Stage Discovery option in the Home screen */
+/* Description: Delete this to display the Stage Discovery option in the Home screen. */
+/* Default: The Stage Discovery option is hidden in the Home screen. */
 .channel-2QD9_O[href^="/discovery"] {
   display: none;
 }
 
+/* Hide Activity Box */
+/* Description: Uncomment to remove the Activity Box displayed above the Voice Connected (RTC) box. */
+/* Default: The Activity panel is not hidden. */
+.activityPanel-28dQGo {
+  /* display: none; */
+}
+
 /* Acrylic background */
-/**
- * Some of these settings are advanced, and may degrade
- * performance on low-end machines. Consult the wiki before
- * making changes.
-**/
-/* Change the URL to your own background*/
+/* Description: Change the background image used to create 'acrylic' effects. */
+/* Default: The default background is a blue/teal/aqua gradient. */
 body,
 .container-16j22k {
   background-image: url(https://i.imgur.com/PoQUA3n.jpg);
 }
 
 /* Blur filter */
-/* Uncomment to ENABLE the blur filter if required */
+/* Description: Uncomment to enable the blur filter. This may be useful for custom backgrounds. */
+/* Warning: May degrade performance. */
+/* Default: The blur filter is disabled.*/
 body::before,
 .container-16j22k::before {
   /* backdrop-filter: blur(45px) saturate(125%); */
@@ -109,7 +116,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.15.18";
+  content: "Metro for Discord \aVersion 3.15.19";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -3798,104 +3805,66 @@ html[lang=ko] .app-2rEoOp::after {
 }
 
 .theme-dark .userPopout-xaxa6l {
+  background-color: black;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.36);
 }
-.theme-dark .headerNormal-1mX3KY {
+.theme-dark .userPopout-xaxa6l .avatar-37jOim {
   background-color: black;
+  border-color: black;
 }
-.theme-dark .headerTop-2cWpdB {
-  background-color: #000;
-  border-bottom: 0;
+.theme-dark .userPopout-xaxa6l .base-1x0h_U {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
-.theme-dark .headerText-15Q25Z,
-.theme-dark .headerText-1HLrL7 {
-  color: white;
-  text-transform: none;
-}
-.theme-dark .headerTagNoNickname-1VyQza {
+.theme-dark .userPopout-xaxa6l .headerTagNoNickname-3qrd77 {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 24px;
   text-transform: none;
 }
-.theme-dark .headerTagDiscriminatorNoNickname-1vRWkt {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  vertical-align: middle;
-}
-.theme-dark .nickname-2gQ76l {
+.theme-dark .userPopout-xaxa6l .nickname-3M3Jfa {
   font-size: 20px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 24px;
   text-transform: none;
 }
-.theme-dark .headerTagWithNickname-1SDMpI {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
+.theme-dark .userPopout-xaxa6l .headerTag-3GFl76 {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
-.theme-dark .setIdentityLink-3lcnXW {
+.theme-dark .userPopout-xaxa6l .setIdentityLink-1t8Ahd a {
   color: rgba(var(--accent), 1);
 }
-.theme-dark .avatar-37jOim {
-  background-color: #000;
-  border-color: #000;
+.theme-dark .userPopout-xaxa6l .bodyInnerWrapper-26fQXj {
+  background: transparent;
 }
-.theme-dark .body-3HBlXn {
-  background-color: #000;
-}
-.theme-dark .activity-3v9l4T .base-1x0h_U {
+.theme-dark .userPopout-xaxa6l .bodyTitle-1ySSKn {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-}
-.theme-dark .activity-3v9l4T .assetsLargeImage-eYwpTX {
-  border-radius: 2px;
-}
-.theme-dark .bar-3urHkF {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.theme-dark .barInner-3NDaY_ {
-  background-color: rgba(var(--accent), 1);
-}
-.theme-dark .textLeft-3EZXG6, .theme-dark .textRight-1XO5Ye {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-}
-.theme-dark .disabledButtonWrapper-3wH6-b {
-  display: none;
-}
-.theme-dark .role-2irmRk {
-  border-width: 2px;
-}
-.theme-dark .actionButton-VzECiy {
   color: white;
-}
-.theme-dark .bodyTitle-3FWCs2 {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
   text-transform: none;
 }
-.theme-dark .note-1MiCN7 {
-  margin-left: 0;
-  margin-right: 0;
+.theme-dark .userPopout-xaxa6l .role-2irmRk {
+  height: 24px;
+  border-radius: 12px;
+  border-width: 2px;
 }
-.theme-dark .body-3iLsc4 {
-  background-color: #2b2b2b;
+.theme-dark .userPopout-xaxa6l .addButton-pcyyf6 {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
-.theme-dark .footer-1N3bR3 {
-  background-color: #000;
+.theme-dark .userPopout-xaxa6l .addButton-pcyyf6:hover {
+  border-color: white;
+  color: rgba(255, 255, 255, 0.6);
 }
-.theme-dark .footer-1N3bR3 .protip-2urNh2 {
-  display: none;
+.theme-dark .userPopout-xaxa6l .note-1oo11U {
+  margin: 0;
+}
+.theme-dark .userPopout-xaxa6l .footer-3UKYOU {
+  background-color: transparent;
 }
 
 .theme-dark .base-3dtUhz {
@@ -4526,10 +4495,19 @@ body::after,
 }
 .theme-dark .wrapperAudio-1jDe0Q .audioMetadata-3zOuGv::before {
   content: "";
+  background-image: none;
   font-family: "Segoe MDL2 Assets";
   font-size: 24px;
   text-align: center;
   line-height: 36px;
+}
+.theme-dark .wrapperAudio-1jDe0Q .metadataContent-3c_ZXw a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.theme-dark .wrapperAudio-1jDe0Q .metadataDownload-1fk90V {
+  padding-left: 8px;
 }
 .theme-dark .wrapperAudio-1jDe0Q .metadataDownload-1fk90V::before {
   content: "";
@@ -5201,135 +5179,97 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 
 .theme-dark .container-1giJp5 {
-  height: calc(48px + 24px);
-  padding: 0;
+  padding: 0 0 0 8px;
   border-bottom: 0;
 }
-.theme-dark .container-1giJp5 .flex-1xMQg5 {
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy {
   position: relative;
-  margin-left: 0;
 }
-.theme-dark .container-1giJp5 .inner-tyMogq {
-  width: 100%;
-  height: 24px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.1);
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy .avatarIconOverlay-2nbU5G {
+  backdrop-filter: saturate(0);
 }
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi {
-  padding-bottom: 0;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi::before {
-  content: "";
-  height: 4px;
-  width: calc(240px - 32px);
-  position: absolute;
-  bottom: -2px;
-  left: 16px;
-  border-radius: 2px;
-  background-color: #000;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityFine-2J6i8z::before {
-  background-color: #00cc6a;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityAverage-3KV0u-::before {
-  background-color: #ffb900;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi.rtcConnectionQualityBad-1J7mUU::before {
-  background-color: #e74856;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi ~ a div {
-  width: 180px;
-  height: 24px;
-  padding-left: 8px;
-  color: white;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 24px;
-  box-sizing: border-box;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi ~ a div:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi svg {
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy .avatarIconOverlay-2nbU5G path {
   display: none;
 }
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi .labelWrapper-Pniq53 button {
-  width: 60px;
-  height: 24px;
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy::after {
+  font-family: "Segoe MDL2 Assets";
   position: absolute;
-  top: 0px;
-  right: 0;
-}
-.theme-dark .container-1giJp5 .rtcConnectionStatus-2-jIsi .labelWrapper-Pniq53 button:before {
-  content: "Status";
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  top: 5px;
+  left: 6px;
   color: white;
 }
-.theme-dark .container-1giJp5 .inner-tyMogq ~ .flex-1xMQg5 {
-  position: absolute;
-  top: 24px;
-  right: 0;
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy[aria-label*=Muted]::after {
+  content: "";
 }
-.theme-dark .container-1giJp5 .button-14-BFJ,
-.theme-dark .container-1giJp5 .button-38aScr {
-  width: 60px;
+.theme-dark .container-1giJp5 .avatarContainer-2LLZwy[aria-label*=Deafened]::after {
+  content: "";
+}
+.theme-dark .container-1giJp5 .button-14-BFJ {
+  width: 48px;
   height: 48px;
 }
-.theme-dark .container-1giJp5 .button-14-BFJ .contents-18-Yxp,
-.theme-dark .container-1giJp5 .button-38aScr .contents-18-Yxp {
+.theme-dark .container-1giJp5 .button-14-BFJ .contents-18-Yxp {
   display: none;
 }
-.theme-dark .container-1giJp5 .button-14-BFJ::before,
-.theme-dark .container-1giJp5 .button-38aScr::before {
+.theme-dark .container-1giJp5 .button-14-BFJ::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .container-1giJp5 .button-14-BFJ:hover,
-.theme-dark .container-1giJp5 .button-38aScr:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.theme-dark .container-1giJp5 .button-14-BFJ[aria-label=Disconnect]::before, .theme-dark .container-1giJp5 .button-14-BFJ[aria-label="Exit Quietly"]::before {
+  content: "";
+}
+.theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Noise Suppression powered by Krisp"]::before {
+  content: "";
+}
+.theme-dark .container-1giJp5 .button-14-BFJ[aria-label*=Camera]::before {
+  content: "";
+}
+.theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Share Your Screen"]::before {
+  content: "";
 }
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ {
-  width: 120px;
-  margin-top: 16px;
-  justify-content: unset;
+  position: absolute;
+  bottom: -48px;
+  right: 0;
 }
-.theme-dark .container-1giJp5 .button-38aScr {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ,
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr {
   width: 60px;
   height: 48px;
   margin: 0;
-  border-radius: 0;
-}
-.theme-dark .container-1giJp5 .button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91 {
+  font-size: 0;
   background-color: transparent;
 }
-.theme-dark .container-1giJp5 .button-38aScr.lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ:hover,
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .container-1giJp5 .button-38aScr.fauxDisabled-2ik0Vw {
-  cursor: not-allowed;
-  pointer-events: none;
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ::before,
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr::before {
+  font-family: "Segoe MDL2 Assets";
+  font-size: 16px;
 }
-.theme-dark .container-1giJp5 button[aria-label=Disconnect]::before,
-.theme-dark .container-1giJp5 button[aria-label="Exit Quietly"]::before {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .contents-18-Yxp {
+  display: none;
+}
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label=Disconnect]::before,
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label="Exit Quietly"]::before {
   content: "";
 }
-.theme-dark .container-1giJp5 button[aria-label^="Noise Suppression powered by Krisp"]::before {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Noise Suppression powered by Krisp"]::before {
   content: "";
 }
-.theme-dark .container-1giJp5 button[aria-label*=Camera]::before {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label*=Camera]::before {
   content: "";
 }
-.theme-dark .container-1giJp5 button[aria-label^="Share Your Screen"]::before {
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Share Your Screen"]::before {
   content: "";
 }
 
 .theme-dark .activityPanel-28dQGo {
   height: 48px;
   padding: 0 0 0 8px;
+  border-bottom: 0;
 }
 .theme-dark .activityPanel-28dQGo .actions-aUdUfC button {
   width: 48px;
@@ -5385,6 +5325,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .container-3baos1 .button-14-BFJ {
   height: 48px;
+  border-radius: 0;
 }
 .theme-dark .container-3baos1 .button-14-BFJ .contents-18-Yxp {
   display: none;
@@ -5398,7 +5339,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .container-3baos1 button[aria-label=Mute],
 .theme-dark .container-3baos1 button[aria-label=Deafen] {
-  width: 120px;
+  width: 60px;
 }
 .theme-dark .container-3baos1 button[aria-label="User Settings"] {
   position: absolute;
