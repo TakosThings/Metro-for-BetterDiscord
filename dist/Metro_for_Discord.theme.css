@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.15.19
+ * @version 3.15.20
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -60,6 +60,11 @@ body::before,
 /*#########################################################
 ##                  End of user options                  ##
 #########################################################*/
+:root {
+  --font-primary: "Segoe UI", Arial, Helvetica, sans-serif;
+  --font-display: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
 body, button {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
@@ -116,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.15.19";
+  content: "Metro for Discord \aVersion 3.15.20";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -2740,7 +2745,6 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   border-color: #000;
 }
 .theme-dark .root-3QyAh1 .nameTag-ECvD8P {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: normal;
@@ -2781,7 +2785,6 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
 }
 .theme-dark .root-3QyAh1 .userInfoSectionHeader-3TYk6R {
   color: white;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -3813,9 +3816,6 @@ html[lang=ko] .app-2rEoOp::after {
   background-color: black;
   border-color: black;
 }
-.theme-dark .userPopout-xaxa6l .base-1x0h_U {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-}
 .theme-dark .userPopout-xaxa6l .headerTagNoNickname-3qrd77 {
   font-size: 20px;
   font-weight: 400;
@@ -3830,9 +3830,6 @@ html[lang=ko] .app-2rEoOp::after {
   line-height: 24px;
   text-transform: none;
 }
-.theme-dark .userPopout-xaxa6l .headerTag-3GFl76 {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-}
 .theme-dark .userPopout-xaxa6l .setIdentityLink-1t8Ahd a {
   color: rgba(var(--accent), 1);
 }
@@ -3840,7 +3837,6 @@ html[lang=ko] .app-2rEoOp::after {
   background: transparent;
 }
 .theme-dark .userPopout-xaxa6l .bodyTitle-1ySSKn {
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -4328,13 +4324,14 @@ body::after,
   display: none;
 }
 .theme-dark .form-2fGMdU .typing-2GQL18 {
-  height: 20px;
-  top: -20px;
+  height: 32px;
+  top: -32px;
   right: 37px;
   bottom: unset;
   background-color: transparent;
   font-size: 11px;
   line-height: 20px;
+  align-items: flex-end;
   justify-content: flex-end;
   pointer-events: none;
 }
@@ -4350,6 +4347,9 @@ body::after,
 }
 .theme-dark .form-2fGMdU .typing-2GQL18 .cooldownWrapper-3joyFc {
   font-weight: normal;
+}
+.theme-dark .form-2fGMdU .typing-2GQL18 .text-1y-e8-:not(:empty) + .cooldownWrapper-3joyFc {
+  margin-bottom: 14px;
 }
 .theme-dark .form-2fGMdU div[class^=scrollableContainer-] ~ div[class^=autocomplete-] {
   bottom: 100%;
@@ -4960,7 +4960,6 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   padding: 0 12px;
   box-shadow: none;
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -5018,7 +5017,6 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .sidebar-2K8pFh .containerDefault-3tr_sE .wrapper-PY0fhH .name-3l27Hl,
 .theme-dark .sidebar-2K8pFh .containerDragBefore-1YqewQ .wrapper-PY0fhH .name-3l27Hl {
   color: rgba(255, 255, 255, 0.6);
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -5390,7 +5388,6 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   margin: 0 12px 8px 12px;
   padding: 16px 0 8px;
   color: white;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -5539,7 +5536,6 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .chat-3bRxxu .container-1r6BKw .children-19S4PO .title-29uC1r {
   margin-right: 12px;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
@@ -5846,6 +5842,9 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="My Account-tab"]::after {
   content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Profile Customization-tab"]::after {
+  content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Privacy & Safety-tab"]::after {
   content: "";
