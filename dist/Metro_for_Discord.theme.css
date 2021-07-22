@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.16.0
+ * @version 3.16.1
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -121,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.16.0";
+  content: "Metro for Discord \aVersion 3.16.1";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -1439,7 +1439,7 @@ div[class^=bd-].item-PXvHYJ:hover {
 .theme-dark .container-1D34oG .container-1r6BKw .toolbar-1t6TWx a[href="https://support.discord.com"] {
   display: none;
 }
-.theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New Group DM"]::before {
+.theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New group DM"]::before {
   content: "";
 }
 .theme-dark .container-1D34oG .container-1r6BKw div[aria-label=Inbox]::before {
@@ -5639,10 +5639,10 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   content: "";
   color: #D02E00;
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Pinned Messages"]::before {
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Pinned messages"]::before {
   content: "";
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Member List"]::before {
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Member list"]::before {
   content: "";
 }
 .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Update Ready!"]::before {
@@ -5662,13 +5662,13 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label=Inbox]::before {
   content: "";
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Voice Call"]::before {
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start voice call"]::before {
   content: "";
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Video Call"]::before {
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start video call"]::before {
   content: "";
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Add Friends to DM"]::before {
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Add friends to DM"]::before {
   content: "";
 }
 
