@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.16.4
+ * @version 3.16.5
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -121,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.16.4";
+  content: "Metro for Discord \aVersion 3.16.5";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -1101,7 +1101,8 @@ div[class^=bd-].item-PXvHYJ:hover {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Settings-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Settings-tab]::after,
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .bd-settings-tab.item-PXvHYJ::after {
   content: "" !important;
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Emotes-tab]::after {
@@ -1445,6 +1446,9 @@ div[class^=bd-].item-PXvHYJ:hover {
   display: none;
 }
 
+html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw .iconWrapper-2OrFZ1 > svg {
+  display: none;
+}
 html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New group DM"]::before {
   content: "";
 }
