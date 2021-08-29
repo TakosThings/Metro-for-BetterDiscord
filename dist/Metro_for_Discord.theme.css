@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.16.5
+ * @version 3.16.6
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -121,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.16.5";
+  content: "Metro for Discord \aVersion 3.16.6";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -5427,11 +5427,11 @@ html[lang^=en-].theme-dark .container-3baos1 button[aria-label="User Settings"]:
   border-radius: 0;
 }
 
-.theme-dark div[class^=membersWrap] div[class*=members-],
-.theme-dark div[class^=membersWrap] div[class*=members-] > div {
+.theme-dark aside[class^=membersWrap] div[class*=members-],
+.theme-dark aside[class^=membersWrap] div[class*=members-] > div {
   background-color: #171717;
 }
-.theme-dark div[class^=membersWrap] h2[class^=membersGroup-] {
+.theme-dark aside[class^=membersWrap] h2[class^=membersGroup-] {
   margin: 0 12px 8px 12px;
   padding: 16px 0 8px;
   color: white;
@@ -5445,53 +5445,53 @@ html[lang^=en-].theme-dark .container-3baos1 button[aria-label="User Settings"]:
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] {
+.theme-dark aside[class^=membersWrap] div[class*=member-] {
   max-width: unset;
   margin: 0;
   box-sizing: border-box;
   border-radius: 0;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-]:hover {
+.theme-dark aside[class^=membersWrap] div[class*=member-]:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark div[class^=membersWrap] div[class*=member-].selected-aXhQR6 {
+.theme-dark aside[class^=membersWrap] div[class*=member-].selected-aXhQR6 {
   background-color: rgba(var(--accent), 0.6);
 }
-.theme-dark div[class^=membersWrap] div[class*=member-].offline-3nJYBR .avatar-3uk_u9 {
+.theme-dark aside[class^=membersWrap] div[class*=member-].offline-3nJYBR .avatar-3uk_u9 {
   filter: grayscale(100%);
 }
-.theme-dark div[class^=membersWrap] div[class*=member-].offline-3nJYBR:hover .avatar-3uk_u9 {
+.theme-dark aside[class^=membersWrap] div[class*=member-].offline-3nJYBR:hover .avatar-3uk_u9 {
   filter: grayscale(0%);
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] div[class^=content-] {
+.theme-dark aside[class^=membersWrap] div[class*=member-] div[class^=content-] {
   border-radius: 0;
   box-sizing: border-box;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] .layout-2DM8Md {
+.theme-dark aside[class^=membersWrap] div[class*=member-] .layout-2DM8Md {
   padding-left: 12px;
   border-radius: 0;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] .avatar-3uk_u9 {
+.theme-dark aside[class^=membersWrap] div[class*=member-] .avatar-3uk_u9 {
   margin-right: 8px;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] div[class^=memberInner] {
+.theme-dark aside[class^=membersWrap] div[class*=member-] div[class^=memberInner] {
   width: 160px;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] div[class^=name-] {
+.theme-dark aside[class^=membersWrap] div[class*=member-] div[class^=name-] {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] .activity-2Gy-9S {
+.theme-dark aside[class^=membersWrap] div[class*=member-] .activity-2Gy-9S {
   color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
 }
-.theme-dark div[class^=membersWrap] div[class*=member-] .activity-2Gy-9S strong {
+.theme-dark aside[class^=membersWrap] div[class*=member-] .activity-2Gy-9S strong {
   font-weight: inherit;
 }
-.theme-dark div[class^=membersWrap] div[class^=memberOnline-] {
+.theme-dark aside[class^=membersWrap] div[class^=memberOnline-] {
   color: white;
 }
 
@@ -5726,10 +5726,10 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
 html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-label="Pinned Messages"]::before {
   content: "";
 }
-html[lang^=en-].theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Member list"]::before,
-html[lang^=en-].theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Member List"]::before,
-html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-label="Member list"]::before,
-html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-label="Member List"]::before {
+html[lang^=en-].theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Hide Member List"]::before,
+html[lang^=en-].theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Show Member List"]::before,
+html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-label="Hide Member List"]::before,
+html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-label="Show Member List"]::before {
   content: "";
 }
 html[lang^=en-].theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Update Ready!"]::before,
@@ -5950,76 +5950,76 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="My Account-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=my-account-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Profile Customization-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=profile-customization-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Privacy & Safety-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="privacy-&-safety-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Authorized Apps-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=authorized-apps-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Connections-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=connections-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Discord Nitro-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=discord-nitro-tab]::after {
   content: "N";
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
   top: 12px;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Nitro Server Boost-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=nitro-server-boost-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Library Inventory-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=library-inventory-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Billing-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=billing-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Appearance-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=appearance-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Accessibility-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=accessibility-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Voice & Video-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="voice-&-video-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Text & Images-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="text-&-images-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Notifications-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=notifications-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Keybinds-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=keybinds-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Language-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=language-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Windows-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=windows-tab]::after {
   content: "";
   font-family: "HoloLens MDL2 Assets";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Streamer Mode-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=streamer-mode-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Advanced-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=advanced-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Game Activity-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=game-activity-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Overlay-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=overlay-tab]::after {
   content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=changelog-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="Hypesquad Online-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=hypesquad-online-tab]::after {
   content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=logout-tab]::after {
@@ -6033,65 +6033,66 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=OVERVIEW-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=overview-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=ROLES-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=roles-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=EMOJI-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=emoji-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=STICKERS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=stickers-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MODERATION-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=moderation-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=AUDIT_LOG-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=audit_log-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INTEGRATIONS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=integrations-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=WIDGET-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=widget-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=GUILD_TEMPLATES-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=guild_templates-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=COMMUNITY-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=community-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=GUILD_PREMIUM-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=guild_premium-tab]::after {
   content: "";
   top: 14px;
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=ANALYTICS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=analytics-tab]::after {
   content: "";
+  top: 14px;
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=PARTNER-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=partner-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DISCOVERY-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=discovery-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MEMBER_VERIFICATION-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=member_verification-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=COMMUNITY_WELCOME-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=community_welcome-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=MEMBERS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=members-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INSTANT_INVITES-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=instant_invites-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=BANS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=bans-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DELETE-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=delete-tab]::after {
   content: "";
 }
 
@@ -6102,19 +6103,19 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=OVERVIEW-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=overview-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=PERMISSIONS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=permissions-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INSTANT_INVITES-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=instant_invites-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=INTEGRATIONS-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=integrations-tab]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=DELETE-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=CHANNEL_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=delete-tab]::after {
   content: "";
 }
 
@@ -6125,10 +6126,10 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
 }
-.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:TRANSPORT:0-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:transport:0-tab"]::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:OUTBOUND:0-tab"]::after {
+.theme-dark .layer-3QrUeG[aria-label=RTC_DEBUG] .sidebar-CFHs9e .item-PXvHYJ[aria-controls="default:outbound:0-tab"]::after {
   content: "";
 }
 
