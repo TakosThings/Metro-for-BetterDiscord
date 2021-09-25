@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.16.6
+ * @version 3.16.7
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -121,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.16.6";
+  content: "Metro for Discord \aVersion 3.16.7";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -1105,7 +1105,7 @@ div[class^=bd-].item-PXvHYJ:hover {
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .bd-settings-tab.item-PXvHYJ::after {
   content: "" !important;
 }
-.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=Emotes-tab]::after {
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=emotes-tab]::after {
   content: "" !important;
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=customcss-tab]::after {
@@ -1449,7 +1449,8 @@ div[class^=bd-].item-PXvHYJ:hover {
 html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw .iconWrapper-2OrFZ1 > svg {
   display: none;
 }
-html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New group DM"]::before {
+html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New group DM"]::before,
+html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New Group DM"]::before {
   content: "";
 }
 html[lang^=en-].theme-dark .container-1D34oG .container-1r6BKw div[aria-label=Inbox]::before {
@@ -3978,9 +3979,6 @@ body::after,
 .theme-dark .chat-3bRxxu .backgroundFlash-24qWLN .groupStart-23k01U {
   margin-top: calc(1.0625rem / 2) !important;
 }
-.theme-dark .chat-3bRxxu :not(.backgroundFlash-24qWLN) .message-2qnXI6:last-child {
-  margin-bottom: 1rem;
-}
 .theme-dark .chat-3bRxxu .message-2qnXI6:hover {
   background-color: transparent;
 }
@@ -5964,6 +5962,9 @@ html[lang^=en-].theme-dark .threadSidebar-1o3BTy .container-1r6BKw div[aria-labe
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=connections-tab]::after {
   content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=subscriptions-tab]::after {
+  content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ[aria-controls=discord-nitro-tab]::after {
   content: "N";
