@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.16.9
+ * @version 3.16.10
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -121,7 +121,7 @@ textarea {
 }
 .theme-dark .container-2lgZY8::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.16.9";
+  content: "Metro for Discord \aVersion 3.16.10";
 }
 
 .theme-dark .container-2lgZY8::before {
@@ -4821,7 +4821,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .wrapper-3NnKdC {
   width: 48px;
   margin-top: 40px;
-  margin-bottom: 96px;
+  margin-bottom: 48px;
   background-color: transparent;
   z-index: 10;
 }
@@ -5230,26 +5230,21 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   height: 48px;
 }
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ {
-  position: absolute;
-  bottom: -48px;
-  right: 0;
+  margin: 0 8px 8px 0;
 }
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ,
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr {
-  width: 60px;
-  height: 48px;
-  margin: 0;
-  font-size: 0;
+  width: auto;
   background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ:hover,
 .theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ::before,
-.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr::before {
-  font-family: "Segoe MDL2 Assets";
-  font-size: 16px;
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-14-BFJ svg,
+.theme-dark .container-1giJp5 .actionButtons-14eAc_ .button-38aScr svg {
+  display: none;
 }
 
 html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ .contents-18-Yxp {
@@ -5265,15 +5260,6 @@ html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label=Disconnec
 html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Noise suppression powered by Krisp"]::before, html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Noise Suppression powered by Krisp"]::before {
   content: "\f61f";
 }
-html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label*=Camera]::before {
-  content: "\e960";
-}
-html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Share Your screen"]::before, html[lang^=en-].theme-dark .container-1giJp5 .button-14-BFJ[aria-label^="Share Your Screen"]::before {
-  content: "\ebc6";
-}
-html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ .contents-18-Yxp {
-  display: none;
-}
 html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label=Disconnect]::before,
 html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label="Exit Quietly"]::before {
   content: "\e89b";
@@ -5281,13 +5267,6 @@ html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-l
 html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Noise suppression powered by Krisp"]::before,
 html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Noise Suppression powered by Krisp"]::before {
   content: "\f61f";
-}
-html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label*=Camera]::before {
-  content: "\e960";
-}
-html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Share Your screen"]::before,
-html[lang^=en-].theme-dark .container-1giJp5 .actionButtons-14eAc_ button[aria-label^="Share Your Screen"]::before {
-  content: "\ebc6";
 }
 
 .theme-dark .activityPanel-28dQGo {
@@ -5327,14 +5306,6 @@ html[lang^=en-].theme-dark .activityPanel-28dQGo .actions-aUdUfC button[aria-lab
 }
 .theme-dark .container-3baos1 .nameTag-3uD-yy {
   display: none;
-}
-.theme-dark .container-3baos1 .avatarWrapper-2yR4wp {
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  bottom: 48px;
-  left: 0;
-  margin-right: 0;
 }
 .theme-dark .container-3baos1 .avatarWrapper-2yR4wp:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -5423,6 +5394,10 @@ html[lang^=en-].theme-dark .container-3baos1 button[aria-label="User Settings"]:
 
 .chat-3bRxxu.threadSidebarOpen-vdkwIh {
   border-radius: 0;
+}
+
+.container-2wlB3z {
+  background-color: #171717;
 }
 
 .theme-dark aside[class^=membersWrap] div[class*=members-],
