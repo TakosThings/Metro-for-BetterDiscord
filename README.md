@@ -9,7 +9,7 @@ Use the [main repo](https://github.com/TakosThings/Metro-for-Discord) to see doc
 * From the [`dist`](https://github.com/TakosThings/Metro-for-BetterDiscord/blob/master/dist/Metro_for_Discord.theme.css) directory.
 
 ## Requirements
-* Windows 10 (up to date)
+* Windows 10 or Windows 11
 * OR the following fonts installed:
   * Segoe UI MDL2 Assets font (v1.78)
   * HoloLens MDL2 Assets font (v2.02)
